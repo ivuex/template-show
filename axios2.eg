@@ -1,0 +1,7 @@
+  getData(){
+              axios.get('./carts.json').then(res=>{
+                  this.products = res.data;
+              },err=>{
+                  console.log(err);
+              });
+          }
